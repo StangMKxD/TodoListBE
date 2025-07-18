@@ -5,7 +5,13 @@
     "rootDir": "./",
     "outDir": "./dist",
     "strict": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true
-  }
+    "esModuleInterop": true
+  },
+  "include": [
+    "server.ts",
+    "config/**/*.ts",
+    "controllers/**/*.ts",
+    "routes/**/*.ts",
+    "prisma/**/*.ts"
+  ]
 }
