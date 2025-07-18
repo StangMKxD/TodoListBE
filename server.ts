@@ -6,8 +6,8 @@ import cors from 'cors';
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-app.get("/", (req, res) => {
-  res.send("✅ API is working - Render!");
+app.get("/", (req: Request, res: Response) => {
+  res.send("Backend is up and running on Render!");
 });
 app.use(morgan('dev'));
 app.use(express.json());
